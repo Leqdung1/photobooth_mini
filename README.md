@@ -86,4 +86,4 @@ flutter build apk
 
 ## 👨‍💻 Tác giả
 
-* godhitech
+* Le Quang Dung
