@@ -1,17 +1,89 @@
-# photobooth_mini
+# 📸 photobooth_mini
 
-A new Flutter project.
+**photobooth_mini** là một ứng dụng chụp ảnh đơn giản được xây dựng bằng Flutter, mô phỏng trải nghiệm photobooth với các tính năng chụp nhanh, xem lại ảnh và xử lý ảnh cơ bản.
 
-## Getting Started
+---
 
-This project is a starting point for a Flutter application.
+## 🚀 Tính năng chính
 
-A few resources to get you started if this is your first Flutter project:
+* 📷 Chụp ảnh nhanh bằng camera
+* 🖼️ Xem lại ảnh đã chụp
+* 🎨 Áp dụng filter / hiệu ứng đơn giản (nếu có)
+* 💾 Lưu ảnh vào thiết bị
+* 📱 Giao diện thân thiện, tối ưu cho mobile
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+---
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# photobooth_mini
+## 🛠️ Công nghệ sử dụng
+
+* **Flutter** – Framework phát triển ứng dụng đa nền tảng
+* **Dart** – Ngôn ngữ lập trình chính
+* (Tùy chọn thêm nếu bạn dùng)
+
+  * camera package
+  * image_picker
+  * path_provider
+
+---
+
+## 📂 Cấu trúc dự án
+
+```bash
+lib/
+ ├── main.dart          # Entry point
+ ├── screens/           # Các màn hình
+ ├── widgets/           # Component tái sử dụng
+ └── services/          # Xử lý logic (camera, lưu ảnh,...)
+```
+
+---
+
+## ▶️ Cách chạy project
+
+### 1. Cài đặt Flutter
+
+Đảm bảo bạn đã cài Flutter và cấu hình PATH.
+
+```bash
+flutter doctor
+```
+
+### 2. Cài dependencies
+
+```bash
+flutter pub get
+```
+
+### 3. Chạy ứng dụng
+
+```bash
+flutter run
+```
+
+---
+
+## 📦 Build APK
+
+```bash
+flutter build apk
+```
+
+---
+
+## 📌 Ghi chú
+
+* Ứng dụng yêu cầu quyền truy cập **Camera** và **Storage**
+* Khuyến nghị chạy trên thiết bị thật để test camera
+
+---
+
+## 📖 Tài liệu tham khảo
+
+* https://docs.flutter.dev/
+* https://pub.dev/
+
+---
+
+## 👨‍💻 Tác giả
+
+* godhitech
