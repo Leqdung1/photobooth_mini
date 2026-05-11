@@ -1,0 +1,21 @@
+{
+  "@@locale": "en",
+  "appTitle": "Photobooth Mini",
+  "photoSessionTitle": "Photo Session",
+  "unexpectedError": "Unexpected error",
+  "sessionIdLabel": "Session ID: {id}",
+  "@sessionIdLabel": {
+    "placeholders": {
+      "id": {}
+    }
+  },
+  "shotsPlannedLabel": "Shots planned: {count}",
+  "@shotsPlannedLabel": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "loadingSession": "Loading session...",
+  "switchToVietnamese": "Tiếng Việt",
+  "switchToEnglish": "English"
+}

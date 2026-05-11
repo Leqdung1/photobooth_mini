@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
+import 'package:photobooth_mini/l10n/app_localizations.dart';
 
+import '../../../../../app/locale/locale_controller.dart';
+import '../../../../../di/injection.dart';
 import '../cubit/photo_session_cubit.dart';
 import '../cubit/photo_session_state.dart';
 
@@ -20,8 +23,20 @@ class _PhotoSessionPageState extends State<PhotoSessionPage> {
 
   @override
   Widget build(BuildContext context) {
+    final l10n = AppLocalizations.of(context)!;
+    final localeController = sl<LocaleController>();
+    final isVietnamese = localeController.locale.languageCode == 'vi';
+
     return Scaffold(
-      appBar: AppBar(title: const Text('Photo Session')),
+      appBar: AppBar(
+        title: Text(l10n.photoSessionTitle),
+        actions: <Widget>[
+          TextButton(
+            onPressed: localeController.toggleLocale,
+            child: Text(isVietnamese ? l10n.switchToEnglish : l10n.switchToVietnamese),
+          ),
+        ],
+      ),
       body: Center(
         child: BlocBuilder<PhotoSessionCubit, PhotoSessionState>(
           builder: (BuildContext context, PhotoSessionState state) {
@@ -30,7 +45,7 @@ class _PhotoSessionPageState extends State<PhotoSessionPage> {
             }
 
             if (state.status == PhotoSessionStatus.failure) {
-              return Text(state.errorMessage ?? 'Unexpected error');
+              return Text(state.errorMessage ?? l10n.unexpectedError);
             }
 
             if (state.status == PhotoSessionStatus.success && state.session != null) {
@@ -43,13 +58,13 @@ class _PhotoSessionPageState extends State<PhotoSessionPage> {
                     style: Theme.of(context).textTheme.headlineSmall,
                   ),
                   const SizedBox(height: 8),
-                  Text('Session ID: ${session.id}'),
-                  Text('Shots planned: ${session.shotCount}'),
+                  Text(l10n.sessionIdLabel(session.id)),
+                  Text(l10n.shotsPlannedLabel(session.shotCount)),
                 ],
               );
             }
 
-            return const Text('Loading session...');
+            return Text(l10n.loadingSession);
           },
         ),
       ),

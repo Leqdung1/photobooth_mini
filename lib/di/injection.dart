@@ -1,6 +1,7 @@
 import 'package:get_it/get_it.dart';
 
 import '../app/router/app_router.dart';
+import '../app/locale/locale_controller.dart';
 import '../features/photo_session/data/datasources/photo_session_local_datasource.dart';
 import '../features/photo_session/data/repositories/photo_session_repository_impl.dart';
 import '../features/photo_session/domain/repositories/photo_session_repository.dart';
@@ -23,5 +24,6 @@ Future<void> configureDependencies() async {
     ..registerFactory<PhotoSessionCubit>(
       () => PhotoSessionCubit(sl<GetCurrentPhotoSession>()),
     )
+    ..registerLazySingleton<LocaleController>(LocaleController.new)
     ..registerLazySingleton<AppRouter>(AppRouter.new);
 }

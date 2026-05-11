@@ -8,6 +8,7 @@
 import 'package:flutter_test/flutter_test.dart';
 
 import 'package:photobooth_mini/app/app.dart';
+import 'package:photobooth_mini/app/locale/locale_controller.dart';
 import 'package:photobooth_mini/app/router/app_router.dart';
 import 'package:photobooth_mini/di/injection.dart';
 
@@ -18,7 +19,12 @@ void main() {
   });
 
   testWidgets('App renders root shell', (WidgetTester tester) async {
-    await tester.pumpWidget(App(router: AppRouter()));
+    await tester.pumpWidget(
+      App(
+        router: AppRouter(),
+        localeController: LocaleController(),
+      ),
+    );
     await tester.pumpAndSettle();
 
     expect(find.text('Photo Session'), findsOneWidget);
