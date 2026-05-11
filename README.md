@@ -1,17 +1,25 @@
 # photobooth_mini
 
-A new Flutter project.
+Photobooth Mini foundation using Flutter Clean Architecture (Bloc/Cubit + GetIt + GoRouter).
 
-## Getting Started
+## Architecture
 
-This project is a starting point for a Flutter application.
+- Composition root: `lib/app/bootstrap.dart`
+- DI container: `lib/di/injection.dart`
+- Feature module sample: `lib/features/photo_session/**`
 
-A few resources to get you started if this is your first Flutter project:
+Detailed rules: `docs/architecture.md`
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
+## Run
 
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
-# photobooth_mini
+```bash
+flutter pub get
+flutter run
+```
+
+## Verify
+
+```bash
+flutter analyze
+flutter test
+```
