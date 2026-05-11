@@ -1,0 +1,21 @@
+{
+  "@@locale": "vi",
+  "appTitle": "Photobooth Mini",
+  "photoSessionTitle": "Phiên chụp ảnh",
+  "unexpectedError": "Đã xảy ra lỗi không mong muốn",
+  "sessionIdLabel": "Mã phiên: {id}",
+  "@sessionIdLabel": {
+    "placeholders": {
+      "id": {}
+    }
+  },
+  "shotsPlannedLabel": "Số ảnh dự kiến: {count}",
+  "@shotsPlannedLabel": {
+    "placeholders": {
+      "count": {}
+    }
+  },
+  "loadingSession": "Đang tải phiên chụp...",
+  "switchToVietnamese": "Tiếng Việt",
+  "switchToEnglish": "English"
+}
