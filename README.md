@@ -1,25 +1,89 @@
-# photobooth_mini
+# 📸 photobooth_mini
 
-Photobooth Mini foundation using Flutter Clean Architecture (Bloc/Cubit + GetIt + GoRouter).
+**photobooth_mini** là một ứng dụng chụp ảnh đơn giản được xây dựng bằng Flutter, mô phỏng trải nghiệm photobooth với các tính năng chụp nhanh, xem lại ảnh và xử lý ảnh cơ bản.
 
-## Architecture
+---
 
-- Composition root: `lib/app/bootstrap.dart`
-- DI container: `lib/di/injection.dart`
-- Feature module sample: `lib/features/photo_session/**`
+## 🚀 Tính năng chính
 
-Detailed rules: `docs/architecture.md`
+* 📷 Chụp ảnh nhanh bằng camera
+* 🖼️ Xem lại ảnh đã chụp
+* 🎨 Áp dụng filter / hiệu ứng đơn giản (nếu có)
+* 💾 Lưu ảnh vào thiết bị
+* 📱 Giao diện thân thiện, tối ưu cho mobile
 
-## Run
+---
+
+## 🛠️ Công nghệ sử dụng
+
+* **Flutter** – Framework phát triển ứng dụng đa nền tảng
+* **Dart** – Ngôn ngữ lập trình chính
+* (Tùy chọn thêm nếu bạn dùng)
+
+  * camera package
+  * image_picker
+  * path_provider
+
+---
+
+## 📂 Cấu trúc dự án
+
+```bash
+lib/
+ ├── main.dart          # Entry point
+ ├── screens/           # Các màn hình
+ ├── widgets/           # Component tái sử dụng
+ └── services/          # Xử lý logic (camera, lưu ảnh,...)
+```
+
+---
+
+## ▶️ Cách chạy project
+
+### 1. Cài đặt Flutter
+
+Đảm bảo bạn đã cài Flutter và cấu hình PATH.
+
+```bash
+flutter doctor
+```
+
+### 2. Cài dependencies
 
 ```bash
 flutter pub get
+```
+
+### 3. Chạy ứng dụng
+
+```bash
 flutter run
 ```
 
-## Verify
+---
+
+## 📦 Build APK
 
 ```bash
-flutter analyze
-flutter test
+flutter build apk
 ```
+
+---
+
+## 📌 Ghi chú
+
+* Ứng dụng yêu cầu quyền truy cập **Camera** và **Storage**
+* Khuyến nghị chạy trên thiết bị thật để test camera
+
+---
+
+## 📖 Tài liệu tham khảo
+
+* https://docs.flutter.dev/
+* https://pub.dev/
+
+---
+
+## 👨‍💻 Tác giả
+
+* Le Quang Dung
