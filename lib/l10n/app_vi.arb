@@ -17,5 +17,12 @@
   },
   "loadingSession": "Đang tải phiên chụp...",
   "switchToVietnamese": "Tiếng Việt",
-  "switchToEnglish": "English"
+  "switchToEnglish": "English",
+  "homeTabLabel": "Trang chủ",
+  "customTabLabel": "Tùy chỉnh",
+  "historyTabLabel": "Lịch sử",
+  "settingTabLabel": "Cài đặt",
+  "customTabTitle": "Màn hình Tùy chỉnh",
+  "historyTabTitle": "Màn hình Lịch sử",
+  "settingTabTitle": "Màn hình Cài đặt"
 }

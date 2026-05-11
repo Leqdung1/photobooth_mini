@@ -17,5 +17,12 @@
   },
   "loadingSession": "Loading session...",
   "switchToVietnamese": "Tiếng Việt",
-  "switchToEnglish": "English"
+  "switchToEnglish": "English",
+  "homeTabLabel": "Home",
+  "customTabLabel": "Custom",
+  "historyTabLabel": "History",
+  "settingTabLabel": "Setting",
+  "customTabTitle": "Custom Tab",
+  "historyTabTitle": "History Tab",
+  "settingTabTitle": "Setting Tab"
 }

@@ -27,6 +27,9 @@ void main() {
     );
     await tester.pumpAndSettle();
 
-    expect(find.text('Photo Session'), findsOneWidget);
+    expect(find.byKey(const Key('tab-home')), findsOneWidget);
+    expect(find.byKey(const Key('tab-custom')), findsOneWidget);
+    expect(find.byKey(const Key('tab-history')), findsOneWidget);
+    expect(find.byKey(const Key('tab-setting')), findsOneWidget);
   });
 }

@@ -15,6 +15,7 @@ Detailed rules: `docs/architecture.md`
 ```bash
 flutter pub get
 flutter run
+flutter gen-l10n
 ```
 
 ## Verify

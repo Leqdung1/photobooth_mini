@@ -35,4 +35,25 @@ class AppLocalizationsVi extends AppLocalizations {
 
   @override
   String get switchToEnglish => 'English';
+
+  @override
+  String get homeTabLabel => 'Trang chủ';
+
+  @override
+  String get customTabLabel => 'Tùy chỉnh';
+
+  @override
+  String get historyTabLabel => 'Lịch sử';
+
+  @override
+  String get settingTabLabel => 'Cài đặt';
+
+  @override
+  String get customTabTitle => 'Màn hình Tùy chỉnh';
+
+  @override
+  String get historyTabTitle => 'Màn hình Lịch sử';
+
+  @override
+  String get settingTabTitle => 'Màn hình Cài đặt';
 }

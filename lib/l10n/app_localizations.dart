@@ -145,6 +145,48 @@ abstract class AppLocalizations {
   /// In en, this message translates to:
   /// **'English'**
   String get switchToEnglish;
+
+  /// No description provided for @homeTabLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Home'**
+  String get homeTabLabel;
+
+  /// No description provided for @customTabLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom'**
+  String get customTabLabel;
+
+  /// No description provided for @historyTabLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'History'**
+  String get historyTabLabel;
+
+  /// No description provided for @settingTabLabel.
+  ///
+  /// In en, this message translates to:
+  /// **'Setting'**
+  String get settingTabLabel;
+
+  /// No description provided for @customTabTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Custom Tab'**
+  String get customTabTitle;
+
+  /// No description provided for @historyTabTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'History Tab'**
+  String get historyTabTitle;
+
+  /// No description provided for @settingTabTitle.
+  ///
+  /// In en, this message translates to:
+  /// **'Setting Tab'**
+  String get settingTabTitle;
 }
 
 class _AppLocalizationsDelegate

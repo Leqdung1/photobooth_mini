@@ -35,4 +35,25 @@ class AppLocalizationsEn extends AppLocalizations {
 
   @override
   String get switchToEnglish => 'English';
+
+  @override
+  String get homeTabLabel => 'Home';
+
+  @override
+  String get customTabLabel => 'Custom';
+
+  @override
+  String get historyTabLabel => 'History';
+
+  @override
+  String get settingTabLabel => 'Setting';
+
+  @override
+  String get customTabTitle => 'Custom Tab';
+
+  @override
+  String get historyTabTitle => 'History Tab';
+
+  @override
+  String get settingTabTitle => 'Setting Tab';
 }
